@@ -1,4 +1,11 @@
 <!-- views/index.erb -->
 <h1>Hello World</h1>
 Hello, the time is currently <%= Time.now %>
-<br>
+<p>
+  <h2>Recent blog posts:</h2>
+
+  <% filenames.each do |filename| %>
+    <a href=<%= "/posts/" + filename %>><%= filename %></a>
+    <br>
+  <% end %>
+</p>
