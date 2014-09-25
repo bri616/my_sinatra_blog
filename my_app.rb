@@ -4,8 +4,8 @@ require './lib/readposts'
 class MyApp < Sinatra::Base
   get "/" do #defining a place to go - this would be the homepage
     myposts = ReadPosts.new("/posts")
-    myposts.sort_by_time
-    postnames = myposts.getfilenames
+    # find the most recent folder
+    postnames = myposts.most_recent_files(5)
     erb :index, :locals => {:filenames => postnames}
   end
 
@@ -17,8 +17,8 @@ class MyApp < Sinatra::Base
     erb :hello, :locals => {:c => c}
   end
 
-  get "/posts/:post_name" do
-    erb ("/posts/"+params[:post_name]).to_sym
+  get "/posts/:date/:post_name" do
+    erb ("/posts/"+params[:date]+"/"+params[:post_name]).to_sym
   end
 
 end
