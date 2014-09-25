@@ -20,8 +20,8 @@ class MyApp < Sinatra::Base
     erb :hello, :locals => {:c => c}
   end
 
-  get "/posts/:post_name" do
-    erb "posts/#{params[:post_name]}".to_sym
+  get "/posts/:post_date/:post_name" do
+    erb "posts/#{params[:post_date]}/#{params[:post_name]}".to_sym
   end
 
 end

@@ -6,7 +6,7 @@ Hello, the time is currently <%= Time.now %>
 
   <% @posts.each do |post| %>
     <p>
-    <li><a href="<%= post.url %>"><%= post.title %></a> | <%= post.post_date %></li>
+    <li><a href="<%= post.url %>"><%= post.title %></a> | <%= post.post_time %></li>
     <p>
   <% end %>
 </p>
