@@ -4,8 +4,9 @@ Hello, the time is currently <%= Time.now %>
 <p>
   <h2>Recent blog posts:</h2>
 
-  <% filenames.each do |filename| %>
-    <a href=<%= "/posts/" + filename %>><%= filename %></a>
-    <br>
+  <% @posts.each do |post| %>
+    <p>
+    <li><a href="<%= post.url %>"><%= post.title %></a> | <%= post.post_date %></li>
+    <p>
   <% end %>
 </p>

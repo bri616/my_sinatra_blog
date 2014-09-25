@@ -1,12 +1,15 @@
 require 'sinatra'
-require './lib/readposts'
+require './lib/post'
 
 class MyApp < Sinatra::Base
+
+  before do
+    # You can put assignmenets here to apply to all route handlers
+  end
+
   get "/" do #defining a place to go - this would be the homepage
-    myposts = ReadPosts.new("/posts")
-    myposts.sort_by_time
-    postnames = myposts.getfilenames
-    erb :index, :locals => {:filenames => postnames}
+    @posts = Post.most_recent(5)
+    erb :index
   end
 
   get "/about-me" do
@@ -18,7 +21,7 @@ class MyApp < Sinatra::Base
   end
 
   get "/posts/:post_name" do
-    erb ("/posts/"+params[:post_name]).to_sym
+    erb "posts/#{params[:post_name]}".to_sym
   end
 
 end
