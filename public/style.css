@@ -3,7 +3,7 @@
 
     body {
 			font-family: 'Libre Baskerville', sans-serif;
-			background: #ccc url(images/lizards2.gif);
+			background: #ccc;
 			margin: 0;
 		}
 
@@ -46,10 +46,10 @@
 		}
 
 		#content {
-			xbackground: white url(images/lizards.gif) 134px 0 repeat-y;
+			xbackground: white;
 			xpadding: 1px 1em 2em 1em;
 			border-left: 254px solid #069;
-			background: white url(images/lizards.gif) repeat-y;
+			background: white;
 			padding: 1px 20px 1em 40px;
 		}
     h1 {

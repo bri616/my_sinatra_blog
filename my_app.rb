@@ -1,11 +1,13 @@
 require 'sinatra'
 require './lib/post'
+require './lib/title_generator'
 
 class MyApp < Sinatra::Base
 
   before do
     # You can put assignments here to apply to all route handlers
     @posts = Post.most_recent(5)
+    @title = TitleGenerator.new.title
   end
 
   get "/" do #defining a place to go - this would be the homepage
