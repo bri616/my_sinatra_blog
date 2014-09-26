@@ -62,13 +62,21 @@
     }
 		h2 {
 			font-size: 1.5em;
-			color: #036;
+			color: #086;
 		}
 
 		h3 {
 			font-size: 1.25em;
 			color: #036;
 		}
+
+    h4 {
+      font-family: 'IM Fell English SC', serif;
+      position: relative;
+      left: 10px;
+      font-size: 1.25em;
+      color: white;
+    }
 
 		#content img {
 			width: 100px;
