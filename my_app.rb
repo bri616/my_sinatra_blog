@@ -4,12 +4,19 @@ require './lib/post'
 class MyApp < Sinatra::Base
 
   before do
-    # You can put assignmenets here to apply to all route handlers
+    # You can put assignments here to apply to all route handlers
+    @posts = Post.most_recent(5)
   end
 
   get "/" do #defining a place to go - this would be the homepage
-    @posts = Post.most_recent(5)
     erb :index
+  end
+
+  post "/" do
+    # do stuff here to add something to a database
+    puts params.inspect
+    # add input to database
+    redirect to("/")
   end
 
   get "/about-me" do
