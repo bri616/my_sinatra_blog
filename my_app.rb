@@ -6,11 +6,13 @@ class MyApp < Sinatra::Base
 
   before do
     # You can put assignments here to apply to all route handlers
+    @recent_posts = Post.most_recent(5)
     @posts = Post.most_recent(5)
     @title = TitleGenerator.new.title
   end
 
   get "/" do #defining a place to go - this would be the homepage
+    @number = 2
     erb :index
   end
 
@@ -31,6 +33,15 @@ class MyApp < Sinatra::Base
 
   get "/posts/:post_date/:post_name" do
     erb "posts/#{params[:post_date]}/#{params[:post_name]}".to_sym
+  end
+
+  get "/page/:number" do
+    # call the function that returns the right blog posts for the page
+    # also, new number = number+1 (instead of 2)
+    number = params[:number].to_i
+    @posts = Post.get_range((number-1)*5+1,number*5)
+    @number = number+1
+    erb :index
   end
 
 end

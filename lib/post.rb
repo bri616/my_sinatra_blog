@@ -28,4 +28,8 @@ class Post
   def self.most_recent(n)
     all.sort_by(&:mod_time).last(n).reverse
   end
+
+  def self.get_range(j,k)
+    all.sort_by(&:mod_time).reverse[j..k]
+  end
 end
