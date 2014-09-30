@@ -12,7 +12,6 @@ class Post
     @title = array[-1].split(".")[0]
     @post_date = array[-2]
     @url = "/posts/#{@post_date}/#{@title}"
-    # @mod_time = mtime
     @content = File.read(@filepath)
     @mod_time = get_mod_time
     @post_time = @mod_time.strftime "%Y-%m-%d %H:%M"

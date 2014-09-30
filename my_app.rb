@@ -33,7 +33,7 @@ class MyApp < Sinatra::Base
 
   get "/posts/:post_date/:file_name" do
     @posts = Post.by_url("/posts/#{params[:post_date]}/#{params[:file_name]}")
-    erb :index
+    erb :one_post
   end
 
   get "/page/:number" do

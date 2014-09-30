@@ -80,6 +80,11 @@ li:hover > .dropdown {
 }
 /*...Header*/
 
+.content {
+  /*background-color: red;*/
+  margin-top: 175px;
+}
+
 .post{
   font-family: Helvetica, Arial, sans-serif;
   /*padding: 20px;*/
@@ -89,7 +94,22 @@ li:hover > .dropdown {
   /*border-right: 500px solid white;*/
 }
 
-.content {
-  /*background-color: red;*/
-  margin-top: 175px;
+.post > h1{
+  display: inline-block;
+  background-color: #4baff2;
+  /*width: 30%;*/
+  padding: 10px;
+  margin-left: -30px;
+  margin-top: -10px;
+  font-size: 25px;
+}
+
+.post time{
+  font-family: Courier;
+  display: inline-block;
+  float: right;
+}
+
+.post p{
+  margin: 10px 15px;
 }
