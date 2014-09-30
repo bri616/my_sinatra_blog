@@ -1,0 +1,118 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="832" measuredH="500" mockupW="800" mockupH="500">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="32" y="0" w="800" h="500" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//briissoawesome.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="778" y="84" w="-1" h="395" measuredW="16" measuredH="100" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Title" x="208" y="93" w="-1" h="-1" measuredW="225" measuredH="43" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Robot%20Robot</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Canvas" x="475" y="212" w="131" h="122" measuredW="100" measuredH="70" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>10667209</borderColor>
+        <color>10667209</color>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::VRule" x="142" y="75" w="-1" h="396" measuredW="10" measuredH="100" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::VRule" x="626" y="75" w="-1" h="394" measuredW="10" measuredH="100" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Canvas" x="146" y="73" w="484" h="100" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>14001853</borderColor>
+        <color>14001853</color>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Canvas" x="376" y="166" w="230" h="27" measuredW="100" measuredH="70" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>9338051</borderColor>
+        <borderStyle>none</borderStyle>
+        <color>9338051</color>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::LinkBar" x="394" y="173" w="-1" h="-1" measuredW="194" measuredH="19" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>0</borderColor>
+        <color>3480693</color>
+        <text>Home%2C%20Blog%2C%20Me%2C%20Homebrew</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::RoundButton" x="152" y="133" w="56" h="79" measuredW="32" measuredH="32" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <shape>diamond</shape>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Icon" x="167" y="160" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>RedditIcon%7Csmall</icon>
+        <markup>true</markup>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Canvas" x="171" y="231" w="277" h="230" measuredW="100" measuredH="70" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>10470904</borderColor>
+        <color>10470904</color>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Canvas" x="158" y="217" w="214" h="34" measuredW="100" measuredH="70" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16770457</borderColor>
+        <color>16770457</color>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Canvas" x="147" y="73" w="483" h="400" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Link" x="500" y="246" w="-1" h="-1" measuredW="68" measuredH="19" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>recent%20post</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Link" x="500" y="272" w="-1" h="-1" measuredW="68" measuredH="19" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>recent%20post</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Link" x="500" y="297" w="-1" h="-1" measuredW="68" measuredH="19" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>recent%20post</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Canvas" x="457" y="199" w="100" h="32" measuredW="100" measuredH="70" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16370588</borderColor>
+        <color>16370588</color>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Label" x="470" y="205" w="-1" h="-1" measuredW="80" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>7880452</color>
+        <text>recent%20posts</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Label" x="162" y="224" w="-1" h="-1" measuredW="205" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>8347648</color>
+        <text>This%20awesome%20thing%20about%20robots</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Paragraph" x="208" y="257" w="232" h="197" measuredW="275" measuredH="80" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>beer%20grainy%20units%20of%20bitterness%20barrel%20sparge%20secondary%20fermentation%20carbonation.%20mash%20tun%20balthazar%20trappist%2C%20balthazar.%22%20adjunct%20cask%20conditioned%20ale%2C%20oxidized%20bunghole%20real%20ale%20mash%20brewpub%20hops%20all-malt.%20malt%20extract.%20lauter%20goblet%20dry%20hopping%20crystal%20malt.%0A%20%0Asparge%20craft%20beer%20hand%20pump%20scotch%20ale%20hand%20pump.%20Aau%20conditioning%20tank%20specific%20gravity%2C%20lager%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Image" x="509" y="369" w="-1" h="-1" measuredW="50" measuredH="50" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./public/robot_logo.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

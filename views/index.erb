@@ -1,12 +1,17 @@
-<h3>Zeitgeist?</h3>
-<p>the intellectual fashion or dominant school of thought that typifies and influences the culture of a particular period in time</p>
+<!-- <div class = "topofblog">
+
+	<h1>Zeitgeist?</h1>
+	<p>the intellectual fashion or dominant school of thought that typifies and influences the culture of a particular period in time</p>
+
+</div> <!-- topofblog -->
 
 <% @posts.each do |post| %>
-	<div class="participation" role="article">
-		<h3><a href="<%= post.url %>"><%= post.title %></a> | <%= post.post_time %></h3>
+	<div class="post">
+		<h1 class="post_title"><a href="<%= post.url %>"><%= post.title %></a> | <%= post.post_time %></h1>
 		<%= post.content %>
 	</div>
 <% end %>
+
 
 <!-- a link here to the "next page" using the number variable -->
 <a href="<%= "/page/#{@number}" %>">Next 5</a>

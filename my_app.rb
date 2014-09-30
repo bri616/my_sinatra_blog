@@ -8,7 +8,7 @@ class MyApp < Sinatra::Base
     # You can put assignments here to apply to all route handlers
     @recent_posts = Post.most_recent(5)
     @posts = Post.most_recent(5)
-    @title = TitleGenerator.new.title
+    # @title = TitleGenerator.new.title
   end
 
   get "/" do #defining a place to go - this would be the homepage
@@ -31,8 +31,9 @@ class MyApp < Sinatra::Base
     erb :hello, :locals => {:c => c}
   end
 
-  get "/posts/:post_date/:post_name" do
-    erb "posts/#{params[:post_date]}/#{params[:post_name]}".to_sym
+  get "/posts/:post_date/:file_name" do
+    @posts = Post.by_url("/posts/#{params[:post_date]}/#{params[:file_name]}")
+    erb :index
   end
 
   get "/page/:number" do

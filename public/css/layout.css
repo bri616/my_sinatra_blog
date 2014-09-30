@@ -1,0 +1,128 @@
+/*HTML Tags...*/
+body {
+  margin: 0;
+  font-family: "Anton", Helvetica, Arial, sans-serif;
+}
+
+/*...HTML Tags*/
+
+/*Layout...*/
+
+.horizontal-list > li {
+  /*background-color: #51b7c7;*/
+  margin: 25px 5px;
+  font-size: 15pt;
+  display: inline-block;
+  list-style: none;
+  height: 25px;
+  position: relative;
+}
+
+.horizontal-list li:hover {
+  background-color: #af67c3;
+}
+/*...Layout*/
+
+/*Header...*/
+.header {
+  /*border: 80px solid white;*/
+  background-color: #f6d5fe;
+  height: 175px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+.brand {
+  background: url(/robot_logo.png) no-repeat left center;
+  padding-left: 60px;
+  display: inline-block;
+  font-size: 45pt;
+  margin-top: 50px;
+  /*background-color: #33d445;*/
+}
+
+.nav {
+  display: inline-block;
+  /*background-color: #3179c6;*/
+  float: right;
+  margin-top: 135px;
+  /*margin-right: 30px;*/
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #c267ab;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+}
+
+li:hover > .dropdown {
+  display: block;
+  background-color: white;
+  margin-top: 8px;
+  width: 100px;
+}
+/*...Header*/
+
+/*Blog Nav...*/
+.blognav {
+  /*border-right: 170px solid white;*/
+  /*border-top: 30px solid white;*/
+  /*border-left: 30px solid white;*/
+  background-color: #64c888;
+  /*margin-top: 80px;*/
+  /*display: inline-block;*/
+  float: right;
+}
+
+
+.blognav ul{
+  background-color: #64c888;
+  margin: 30px;
+  padding: 0;
+}
+
+.blognav li{
+  list-style: none;
+  padding: 10px;
+  margin: 0 30px;
+}
+
+.title{
+  display: inline;
+  background-color: #3f8053;
+  padding: 15px;
+  margin-right: 55px;
+}
+
+/*...Blog Nav*/
+
+.post{
+  font-family: Helvetica, Arial, sans-serif;
+  /*padding: 20px;*/
+  border: 50px solid white;
+  background-color: pink;
+  /*border-left: 90px solid white;*/
+  /*border-right: 500px solid white;*/
+}
+
+.content {
+  /*background-color: red;*/
+  margin-top: 175px;
+}

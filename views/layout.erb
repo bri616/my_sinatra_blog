@@ -1,45 +1,71 @@
-<head>
-  <!-- <link rel = "stylesheet" href="/style.css" type=text/css /> -->
-  <link href="/style.css" rel="stylesheet">
-  <script src="/app.js"></script>
-  <meta charset="utf-8">
-  <title>cellar door</title>
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/css/resets.css" rel="stylesheet">
+    <link href="/css/layout.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Slabo+13px' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <title>Robots!</title>
+  </head>
+  <body>
+    <div class="header">
 
-<div id="container">
+      <div class="container">
+        <div class="brand">
+          Robot Robot
+        </div>
 
-  <div id="header">
-    <!-- <h1>Cellar Door</h1> -->
-    <h1><%= @title %></h1>
-  </div>
+        <div class="nav">
+          <ul class="horizontal-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Me</a></li>
+            <li><a href="/">Homebrew</a></li>
+            <li>
 
-  <div id="navigation">
+              <a class="" href="/">Blog</a>
+              <ul class="dropdown">
+                <% @recent_posts.each do |post| %>
+                    <li><a href="<%= post.url %>"><%= post.title %></a></li>
+                <% end %>
+              </ul>
 
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about-me">Me.</a></li>
-      <li><a href="">Blog</a></li>
-      <li><a href="">Homebrew</a></li>
-      <li><a href="">Music</a></li>
-      <li><a href="">Math</a></li>
-      <li><a href="">Python</a></li>
-    </ul>
+            </li>
+          </ul>
+        </div>
+        <!--.nav-->
+      </div>
+      <!-- .container -->
 
-    <ul>
-      <li><h4>Recent Posts</h4></li>
-      <% @recent_posts.each do |post| %>
-          <li><a href="<%= post.url %>"><%= post.title %></a></li>
-      <% end %>
-    </ul>
-
-  </div>
-
-  <div id="content">
-
-
-<%= yield %>
+    </div>
+    <!--.header-->
 
 
+    <!-- <div class="blognav">
 
-</body>
+        <div class="title">
+          recent posts
+        </div>
+
+        <ul>
+          <% @recent_posts.each do |post| %>
+              <li><a href="<%= post.url %>"><%= post.title %></a></li>
+          <% end %>
+        </ul>
+
+
+    </div>
+    <!--.blognav-->
+    <div class="content">
+
+
+      <div class="container">
+        <%= yield %>
+
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- content -->
+
+  </body>
 </html>
