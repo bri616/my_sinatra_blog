@@ -80,39 +80,6 @@ li:hover > .dropdown {
 }
 /*...Header*/
 
-/*Blog Nav...*/
-.blognav {
-  /*border-right: 170px solid white;*/
-  /*border-top: 30px solid white;*/
-  /*border-left: 30px solid white;*/
-  background-color: #64c888;
-  /*margin-top: 80px;*/
-  /*display: inline-block;*/
-  float: right;
-}
-
-
-.blognav ul{
-  background-color: #64c888;
-  margin: 30px;
-  padding: 0;
-}
-
-.blognav li{
-  list-style: none;
-  padding: 10px;
-  margin: 0 30px;
-}
-
-.title{
-  display: inline;
-  background-color: #3f8053;
-  padding: 15px;
-  margin-right: 55px;
-}
-
-/*...Blog Nav*/
-
 .post{
   font-family: Helvetica, Arial, sans-serif;
   /*padding: 20px;*/
