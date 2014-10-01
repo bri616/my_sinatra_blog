@@ -103,11 +103,22 @@ li:hover > .dropdown li {
 .post{
   font-family: "Special Elite", Arial, sans-serif;
   color: #703765;
+  /*border-top: 10px solid white;*/
   border: 50px solid white;
   background-color: #f3c7f8;
   /*border-left: 90px solid white;*/
   /*border-right: 500px solid white;*/
 }
+
+/*.post > .contents{
+  /*display: none;*/
+  /*position: relative;*/
+  /*top: 10px;*/
+  /*padding: 20px;*/
+  /*margin: auto;*/
+  /*color: #703765;*/
+  /*background-color: #f3c7f8;*/
+/*}*/
 
 .post > h1{
   display: inline-block;
@@ -130,7 +141,7 @@ li:hover > .dropdown li {
 }
 
 .post > p{
-  margin: 10px 15px;
+  margin: 30px 15px;
 }
 
 .post > pre{
