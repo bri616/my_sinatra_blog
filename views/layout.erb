@@ -24,27 +24,23 @@
             <li><a href="/about-me">Me</a></li>
             <li><a href="/">Homebrew</a></li>
             <li>
-
-              <a class="" href="/">Blog</a>
+              <a href="/">Blog</a>
               <ul class="dropdown">
                 <% @recent_posts.each do |post| %>
-                    <li><a href="<%= post.url %>"><%= post.title %></a></li>
+                    <li><a href="<%= post.url %>"><%= post.post_time %></a></li>
                 <% end %>
               </ul>
-
             </li>
           </ul>
         </div>
         <!--.nav-->
       </div>
       <!-- .container -->
-
     </div>
     <!--.header-->
-
     <div class="content">
-
       <div class="container">
+
         <%= yield %>
       </div>
       <!-- .container -->
