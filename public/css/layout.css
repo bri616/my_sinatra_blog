@@ -87,6 +87,10 @@ li:hover > .dropdown li:hover {
   background-color: #703765;
 }
 
+li:hover > .dropdown a {
+  padding: 10px;
+}
+
 /*...Header*/
 
 .content {
@@ -96,11 +100,10 @@ li:hover > .dropdown li:hover {
 .post{
   font-family: "Special Elite", Arial, sans-serif;
   color: #703765;
-  /*border-top: 10px solid white;*/
-  border: 50px solid white;
+  width: 800px;
+  margin: 40px auto;
+  border: 3px solid #703765;
   background-color: #f3c7f8;
-  /*border-left: 90px solid white;*/
-  /*border-right: 500px solid white;*/
 }
 
 /*.post > .contents{
@@ -116,11 +119,11 @@ li:hover > .dropdown li:hover {
 .post > h1{
   display: inline-block;
   background-color: #f3c7f8;
-  /*width: 30%;*/
   padding: 10px;
   margin-left: -30px;
-  margin-top: -10px;
+  margin-top: -30px;
   font-size: 25px;
+  font-weight: bold;
   border: 5px solid #703765;
 }
 
