@@ -20,9 +20,20 @@ body {
   background-color: #af67c3;
 }
 
+
+.content {
+  margin-top: 200px;
+}
+
 /*...Layout*/
 
 /*Header...*/
+
+.container {
+  width: 900px;
+  margin: auto;
+}
+
 .header {
   background-color: #f6d5fe;
   border-bottom: 5px solid #703765;
@@ -30,11 +41,6 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-.container {
-  width: 900px;
-  margin: auto;
 }
 
 .brand {
@@ -71,7 +77,6 @@ body {
   position: absolute;
 }
 
-
 li:hover > .dropdown {
   display: block;
   background-color: #af67c3;
@@ -93,10 +98,14 @@ li:hover > .dropdown a {
 
 /*...Header*/
 
-.content {
-  margin-top: 175px;
+/*Index ...*/
+.pagination a {
+  font-family: "Special Elite";
+  font-size: 18pt;
 }
+/*... Index*/
 
+/*Blog Posts...*/
 .post{
   font-family: "Special Elite", Arial, sans-serif;
   color: #703765;
@@ -105,16 +114,6 @@ li:hover > .dropdown a {
   border: 3px solid #703765;
   background-color: #f3c7f8;
 }
-
-/*.post > .contents{
-  /*display: none;*/
-  /*position: relative;*/
-  /*top: 10px;*/
-  /*padding: 20px;*/
-  /*margin: auto;*/
-  /*color: #703765;*/
-  /*background-color: #f3c7f8;*/
-/*}*/
 
 .post > h1{
   display: inline-block;
@@ -146,3 +145,5 @@ li:hover > .dropdown a {
   margin: 20px;
   padding: 10px;
 }
+
+/*... Blog Posts*/
