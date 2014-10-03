@@ -7,9 +7,9 @@
 <!-- a link here to the "next page" using the number variable -->
 <div class="pagination">
 	<% if @posts.length % 5 == 0  %>
-		<a id="next5" href="<%= "/page/#{@number}" %>">Next 5</a>
+		<a id="next5" href="<%= "/page/#{@number}" %>">&#8669;</a>
 	<% end %>
 	<% if @number > 2  %>
-		<a id="prev5" href="<%= "/page/#{@number-2}" %>">Previous 5</a>
+		<a id="prev5" href="<%= "/page/#{@number-2}" %>">&#8668;</a>
 	<% end %>
 </div>
