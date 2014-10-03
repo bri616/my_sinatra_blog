@@ -104,11 +104,11 @@ li:hover > .dropdown a {
   font-size: 50pt;
   text-decoration: none;
 }
-#next5 {
+#nextpage {
   float: right;
 }
 
-#prev5 {
+#prevpage {
   float: left;
 }
 /*... Index*/
