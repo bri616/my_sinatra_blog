@@ -99,7 +99,14 @@ li:hover > .dropdown a {
 /*...Header*/
 
 /*Index ...*/
-.pagination a {
+#next5 {
+  float: left;
+  font-family: "Special Elite";
+  font-size: 18pt;
+}
+
+#prev5 {
+  float: right;
   font-family: "Special Elite";
   font-size: 18pt;
 }
