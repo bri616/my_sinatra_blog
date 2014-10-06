@@ -6,9 +6,11 @@ class MyApp < Sinatra::Base
 
   before do
     # You can put assignments here to apply to all route handlers
-    @N = 2
+    @N = 5
     @recent_posts = Post.most_recent(@N)
     @posts = Post.most_recent(@N)
+    @total_posts = Post.all.length
+    @number_of_pages = @total_posts % @N == 0 ? (@total_posts/@N).to_i : (@total_posts/@N).to_i + 1
     # @title = TitleGenerator.new.title
   end
 
@@ -41,7 +43,7 @@ class MyApp < Sinatra::Base
     # call the function that returns the right blog posts for the page
     # also, new number = number+1 (instead of 2)
     number = params[:number].to_i
-    @posts = Post.get_range((number-1)*@N+1,number*@N)
+    @posts = Post.get_range((number-1)*@N,number*@N-1)
     @number = number+1
     erb :index
   end

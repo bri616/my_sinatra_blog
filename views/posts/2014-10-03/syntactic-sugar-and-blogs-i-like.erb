@@ -1,0 +1,75 @@
+<h1>Syntactic sugar and blogs I like</h1>
+<time datetime="2014-10-03 11:32">03 October 2014, 1132</time>
+
+<p>
+  This week at Ada has been the most frustrating so far. Learning CSS has been a
+  challenge for me. It's different from the logic-maze of ruby. Figuring out how
+  I want things to look and what I like has also been a challenge, so I decided
+  to compile a list of websites I enjoy viewing.
+</p>
+<p>
+  A list of blogs/sites with designs I find pleasing:
+  <ul>
+    <li><a href="http://www.davidlebovitz.com/">http://www.davidlebovitz.com/</a></li>
+    <li><a href="http://www.brit.co/">http://www.brit.co/</a></li>
+    <li><a href="http://appellationbeer.com/blog/">http://appellationbeer.com/blog/</a></li>
+    <li><a href="http://smittenkitchen.com/">http://smittenkitchen.com/</a></li>
+    <li><a href="http://ask.metafilter.com/">http://ask.metafilter.com/</a></li>
+    <li><a href="https://untappd.com/home">https://untappd.com/home</a></li>
+  </ul>
+</p>
+<p>
+  After talking to a fellow classmate (thanks Rebecca!), I learned that I like
+  simplicity, clear section breaks, sans-serif font, a neutral and non-monochromatic color scheme, and
+  a lot of white space. Currently my blog violates some of these criteria, so I
+  plan to work out a new mock-up to change to style to one that is more pleasing
+  to me.
+</p>
+<p>
+  On to the next topic of this post. <em>Syntactic sugar!</em>
+</p>
+<p>
+  During a project in class a few weeks ago, I was introduced to <a href="https://github.com/bbatsov/rubocop/blob/master/README.md">Rubocop</a>.
+  Rubocop
+  is a nifty tool for ensuring that your ruby code fits into some predetermined
+  style guidelines. I'm often worried about this because I want to make sure my
+  code is readable to myself in the future as well as other humans who might want
+  to look at it. Upon using Rubocop for the first time, one of the first things I
+  noticed was that it told me to use the following syntax:
+  <code>
+    <pre>
+      all_things.sort_by(&:time)
+    </pre>
+  </code>
+</p>
+<p>
+  In place of:
+  <code>
+    <pre>
+      all_things.sort_by { |thing| thing.time }
+    </pre>
+  </code>
+</p>
+<p>
+  Which already exists in place of:
+<code>
+  <pre>
+    all_things.sort_by do |thing|
+      thing.time
+    end
+  </pre>
+</code>
+</p>
+<p>
+  Apparently executing blocks that call one method on each object is a fairly common
+  thing to do in Ruby, and this little bit of syntactic sugar exists to use in place
+  of the longer block syntax(es). I think it's neat and a bit more readable in most cases.
+</p>
+<p>
+  Further, this caused me to do some googling and learn about what this syntax was
+  actually executing in ruby. Apparently, the & operator calls to_proc in Ruby, which
+  then turns the symbol into a proc object, and passes it as a method call in a block
+  on each object in the enumerable. I read about this a bit in the documentation
+  for <a href="http://www.ruby-doc.org/core-2.1.3/Proc.html">Proc</a> and also on
+  this person's blog <a href="http://swaggadocio.com/post/287689063/ruby-idioms-shortcuts-symbol-to-proc">here</a>.
+</p>

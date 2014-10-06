@@ -54,8 +54,11 @@ body {
 
 .nav {
   display: inline-block;
+  /*positio n: absolute;*/
   float: right;
   margin-top: 95px;
+  /*right: 120px;*/
+  /*top: 95px;*/
   font-family: "Special Elite";
   font-size: 15pt;
 }
@@ -71,6 +74,7 @@ body {
   list-style: none;
   background-color: #703765;
 }
+
 
 .dropdown {
   display: none;
@@ -104,6 +108,11 @@ li:hover > .dropdown a {
   font-size: 50pt;
   text-decoration: none;
 }
+
+.pagination a:hover{
+  border-top: 2px dashed #703765;
+}
+
 #nextpage {
   float: right;
 }
@@ -152,6 +161,16 @@ li:hover > .dropdown a {
   color: grey;
   margin: 20px;
   padding: 10px;
+}
+
+.post > ul{
+  margin: 15px;
+  margin-left: 40px;
+}
+
+.post > ul li{
+  padding: 5px;
+  font-size: 10pt;
 }
 
 /*... Blog Posts*/

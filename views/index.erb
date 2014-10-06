@@ -6,7 +6,7 @@
 
 <!-- a link here to the "next page" using the number variable -->
 <div class="pagination">
-	<% if @posts.length % @N == 0  %>
+	<% if @number <= @number_of_pages %>
 		<a id="nextpage" href="<%= "/page/#{@number}" %>">&#8669;</a>
 	<% end %>
 	<% if @number > 2  %>
